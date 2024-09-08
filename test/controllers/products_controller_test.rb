@@ -40,6 +40,11 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should destroy product" do
+    assert_raises ActiveRecord::RecordNotDestroyed do
+      delete product_url(products(:two))
+    end
+    assert Product.exists?(products(:two).id)
+
     assert_difference("Product.count", -1) do
       delete product_url(@product)
     end
