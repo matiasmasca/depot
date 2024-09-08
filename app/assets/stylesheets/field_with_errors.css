@@ -1,0 +1,3 @@
+.field_with_errors :is(input, textarea, select) {
+  border: solid red 2px !important;
+}
