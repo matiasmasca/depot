@@ -1,12 +1,10 @@
-<div id="<%= dom_id line_item %>">
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Product:</strong>
-    <%= line_item.product_id %>
-  </p>
-
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Cart:</strong>
-    <%= line_item.cart_id %>
-  </p>
-
-</div>
+<tr>
+  <td class="text-right"><%= line_item.quantity %></td>
+  <td>&times;</td>
+  <td class="pr-2">
+    <%= line_item.product.title %>
+  </td>
+  <td class="text-right font-bold">
+    <%= number_to_currency(line_item.total_price) %>
+  </td>
+</tr>
