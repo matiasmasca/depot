@@ -28,7 +28,7 @@ class LineItemsController < ApplicationController
 
     respond_to do |format|
       if @line_item.save
-        format.turbo_stream # by naming conventions for the templates, we moved to create.turbo_stream.erb file
+        format.turbo_stream { @current_item = @line_item } # by naming conventions for the templates, we moved to create.turbo_stream.erb file
         format.html { redirect_to store_index_url }
         format.json { render :show, status: :created, location: @line_item }
       else
