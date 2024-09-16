@@ -26,11 +26,19 @@
     <%= form.email_field :email, class: "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
 
-  <div class="my-5">
-    <%= form.label :pay_type %>
-    <%= form.select :pay_type, Order.pay_types.keys,
-                    { prompt: 'Select a payment method' },
-                    class: "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+  <div data-controller="payment">
+    <div class="my-5">
+      <%= form.label :pay_type %>
+      <%= form.select :pay_type, Order.pay_types.keys,
+                      { prompt: 'Select a payment method' },
+                      'data-payment-target' => 'selection',
+                      'data-action' => 'payment#showAdditionalFields',
+                      class: 'block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full' %>
+    </div>
+
+    <%= render partial: 'check', locals: {form: form} %>
+    <%= render partial: 'cc',    locals: {form: form} %>
+    <%= render partial: 'po',    locals: {form: form} %>
   </div>
 
   <div class="inline">
