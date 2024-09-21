@@ -6,26 +6,10 @@ This is just the implementation of the code of the book Agile Web Development wi
 - Ruby version: ruby 3.3.2 (2024-05-30 revision e5a195edf6) +YJIT [x86_64-linux]
 
 
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Copyrights
+Most of the code was excerpted from "Agile Web Development with Rails 72",
+published by The Pragmatic Bookshelf.
+Copyrights apply to this code. It may not be used to create training material,
+courses, books, articles, and the like. Contact us if you are in doubt.
+We make no guarantees that this code is fit for any purpose.
+Visit https://pragprog.com/titles/rails72 for more book information.
