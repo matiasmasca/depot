@@ -10,13 +10,19 @@ Rails.application.routes.draw do
   get "sessions/destroy"
 
   resources :users
-  resources :orders
-  resources :line_items
-  resources :carts
-  root "store#index", as: "store_index"
 
-  get "store/index"
-  resources :products
+  resources :products do
+    get :who_bought, on: :member
+  end
+
+  scope "(:locale)" do
+    resources :orders
+    resources :line_items
+    resources :carts
+    root "store#index", as: "store_index", via: :all
+  end
+
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
