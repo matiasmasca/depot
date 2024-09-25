@@ -6,6 +6,10 @@ This is just the implementation of the code of the book Agile Web Development wi
 - Ruby version: ruby 3.3.2 (2024-05-30 revision e5a195edf6) +YJIT [x86_64-linux]
 
 
+# Emails
+For send emails on Development access to http://localhost:3000/rails/conductor/action_mailbox/inbound_emails
+
+
 # Copyrights
 Most of the code was excerpted from "Agile Web Development with Rails 72",
 published by The Pragmatic Bookshelf.
