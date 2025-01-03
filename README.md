@@ -9,6 +9,12 @@ This is just the implementation of the code of the book Agile Web Development wi
 # Emails
 For send emails on Development access to http://localhost:3000/rails/conductor/action_mailbox/inbound_emails
 
+# Credentials
+DON'T DO THIS ON you REAL WORLD APPLICATIONS
+You will need to create your own crendentials file, with '2af6db2ce3bd94a7041ce43c8541cf77'
+$ EDITOR='code --wait' bin/rails credentials:edit
+
+
 
 # Copyrights
 Most of the code was excerpted from "Agile Web Development with Rails 72",
