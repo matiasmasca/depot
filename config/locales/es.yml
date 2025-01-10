@@ -39,9 +39,9 @@ es:
 
   carts:
     cart:
-      title:       "Carrito de Compra"
+      title:       "Carrito de la Compra"
       empty:       "Vaciar Carrito"
-      checkout:    "Pagar"
+      checkout:    "Comprar"
 
   store:
     index:

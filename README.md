@@ -14,6 +14,8 @@ DON'T DO THIS ON you REAL WORLD APPLICATIONS
 You will need to create your own crendentials file, with '2af6db2ce3bd94a7041ce43c8541cf77'
 $ EDITOR='code --wait' bin/rails credentials:edit
 
+# Last page
+265
 
 
 # Copyrights
